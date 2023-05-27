@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="return false;" onclick="blockdev()">
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="neon.png" /> <link rel="shortcut icon" href="../logo.png" type="image/x-icon"> <nav> 
+	<title>Neon Glitch</title>
+	 <button onclick="location.href=('index.html');" title="Exit">&times;</button>
+<button onclick="location.reload()" title="Refresh Game">&#8634;</button>
+ </nav>
+
+<script src="../devtools.js" async type="module"></script>
+  <title>Neon Platformer</title>
+  
+<h1 id="title2"></h1>
+  <h3>AN EXTREMELY HARDCORE EDITION OF NEON, NOT RECOMMENDED FOR STARTERS. DON'T SAY I DIDN'T WARN YOU.</h3>
+  
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+body {
+  background:#1C2333;
+}
+#title, #title2{
+	transition-duration: 0s;
+	width: fit-content;
+	color: #222222;
+	font-size: 60px;
+	font-family: 'Orbitron', sans-serif;
+	text-shadow: 2.5px 2.5px lime;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+  font-family: 'Major Mono Display', monospace;
+}
+
+#title::after, #title2::after{
+		animation: typewrite 1s infinite;
+}
+
+#title::selection, #title2::selection{
+	background-color: rgb(25, 0, 255);
+	color: black;
+}
+button{
+	height: 63px;
+	display: flex;
+	align-items: center;
+	width: fit-content;
+	cursor: pointer;
+	text-align: center;
+	color: yellow;
+	outline: none;
+	padding: 0;
+	user-select: none;
+	display: inline;
+	margin-right: 30px;
+	font-weight: bold;
+	font-size: 45px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: transparent;
+	border: none;
+}
+
+button:hover{
+	color: red;
+}
+
+button:active{
+	color: rgb(161, 0, 0);
+}
+
+h3 {
+  color: #666;
+  font-family: 'Major Mono Display', monospace;
+  text-align: center;
+}
+
+.background {
+  table-layout: fixed;
+  border-spacing: 0;
+}
+
+.background td {
+  padding: 0;
+}
+
+.lava, .actor {
+  background-color: #fe643e;
+      animation-name: glitch-lava;
+  animation-duration: .3s;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
+}
+
+.wall {
+	 background: #2f0072;
+    animation-name: glitch;
+  animation-duration: .3s;
+  animation-iteration-count: infinite;
+ }
+
+.actor {
+  position: absolute;
+}
+
+.coin {
+  background: #E9E917;
+}
+
+.player {
+  background: lime;
+  box-shadow: none;
+	padding: 0;
+	margin: 0;
+}
+
+.lost .player{
+	background-color: #8e2323;
+	border: 1px solid red;
+}
+
+.won .player {
+  background: lime url("arrow.png");
+	border: 1px solid yellow;
+}
+
+  
+.game {
+  position: relative;
+  overflow: hidden;
+	bottom: 0;
+  animation-name: shake;
+  animation-duration: 0.1s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0%{
+    bottom:-80px;
+    left: -80px;
+  }
+  50%{
+    
+  }
+  100%{
+    bottom: 80px;
+    left: 80px;
+  }
+}
+
+@keyframes glitch{
+  0%{
+    background-color: red;
+  }
+  30%{
+    background-color: lime;
+  }
+  40%{
+    background-color: #2f0072;
+  }
+  50%{
+        background-color: blue;
+  }
+  100%{
+    background-color: red;
+  }
+}
+
+@keyframes glitch-lava{
+  0%{
+    background-color: red;
+  }
+  30%{
+    background-color: red;
+  }
+  40%{
+    background-color: #2f0072;
+  }
+  50%{
+        background-color: lime;
+  }
+  100%{
+    background-color: red;
+  }
+}
+  
+::-webkit-scrollbar{
+  width: 0px;
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" >
+
+
+  
+      <script id="rendered-js" type="module" src="earthquake.js">
+        
+    </script>
+
+  
+
+  <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-bb9a2ba1f03f6147732cb3cd52ac86c6b24524aa87a05ed0b726f11e46d7e277.js"></script>
+</body>
+
+</html>
