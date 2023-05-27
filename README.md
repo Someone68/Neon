@@ -16,8 +16,9 @@
 
 # PLAY THE GAME [HERE](https://n30n.netlify.app)
 
-### AAAAAND if you want to fork it, it's very easy to do!
+### AAAAAND if you want to fork it, it's very easy to change!
 
+- You definitely need some JavaScript knowledge to change these settings!
 - Honestly the only things you really need are physics settings and levels
 - To add levels, just copy paste one of the arrays inside of the arrays inside of the `LEVELS` variable in ./game/main.js
 - Here's a nice chart to show you what each char does:
