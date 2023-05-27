@@ -1,20 +1,28 @@
 # NEON
-## Hello! Welcome to `Neon`, a platformer!
-### What is dis?
-------------------
-A cool platformer, it's very easy to change and add levels if you fork it because it's just an array of strings, and after you play you will understand which character is what.
-<br>
-or, you can look at this chart:
-<br>
-| Character | Type | Compatibility|
-| --------- | ---- |--------------|
-|      `o`    | Coin |  Working  | 
-|     `x`    | Wall |  Working  |
-|     `!`    | Lava |  Working  |
-|`-`, `=`, `\|`, `v`, `^`|Moving Lava| Bugged / Do not use|
-#### COLLECT ALL COINS TO WIN
-![Neon Platformer](background.png)
-### Credits
----------------------------
-We used scrap code for a platformer. [Click here](https://codepen.io/0030310/pen/xxOZZyd) to go to the codepen page
-<br>*__NOTE:__ atleast i think thats the project, it may be another remix of the original*
+
+### WELCOME TO NEON, AN (UNSURPRISINGLY) NEON PLATFORMER GAME
+
+- It's actually very easy to play!
+- It is a platformer.
+- Use arrow keys to move.
+- Press the up arrow key to jump.
+- Don't touch lava.
+- Press the X to exit.
+- Collect all the coins to go to the next level.
+- Supported devices: Chrome OS, MacOS, and Windows.
+- Use the Enter key to scroll up and the shift key to scroll down in the level.
+
+# PLAY THE GAME [HERE](https://n30n.netlify.app)
+
+### AAAAAND if you want to fork it, it's very easy to do!
+
+- Honestly the only things you really need are physics settings and levels
+- To add levels, just copy paste one of the arrays inside of the arrays in ./game/main.js
+- Here's a nice chart to show you what each char does:
+
+| **SYMBOL** | **DESCRIPTION**                                                       |
+| ---------- | --------------------------------------------------------------------- |
+| `x`        | Wall                                                                  |
+| `!`        | Lava                                                                  |
+| `o`        | Coin                                                                  |
+| `@`        | Spawn Point (if there are multiple, it will create that much players) |
