@@ -19,7 +19,7 @@
 ### AAAAAND if you want to fork it, it's very easy to do!
 
 - Honestly the only things you really need are physics settings and levels
-- To add levels, just copy paste one of the arrays inside of the arrays in ./game/main.js
+- To add levels, just copy paste one of the arrays inside of the arrays inside of the `LEVELS` variable in ./game/main.js
 - Here's a nice chart to show you what each char does:
 
 | **SYMBOL** | **DESCRIPTION**                                                       |
@@ -28,3 +28,14 @@
 | `!`        | Lava                                                                  |
 | `o`        | Coin                                                                  |
 | `@`        | Spawn Point (if there are multiple, it will create that much players) |
+
+- There are many things you can change about the physics, here are the basic variables you can change:
+
+| **VARIABLE**   | **DESCRIPTION**                |
+| -------------- | ------------------------------ |
+| `jumpSpeed`    | Jump Speed                     |
+| `gravity`      | Gravity                        |
+| `playerXSpeed` | The player's horizontal speed. |
+| `wobbleDist`   | Coin wobble distance           |
+| `wobbleSpeed`  | Coin wobble speed              |
+| `maxStep`      | Maximum acceleration speed     |
