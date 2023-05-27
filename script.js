@@ -1,5 +1,5 @@
 function openBuggedGame() {
-	window.open("https://replit.com/@FelixF809/Neon");
+	window.open("mailto:68.someone.m@gmail.com?subject=Bugged%20Game");
 }
 try {
 	var i = 0;

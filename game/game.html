@@ -11,10 +11,16 @@
 		<nav>
 			<title>Neon</title>
 			<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-			<button onclick="location.href=('../index.html');" title="Exit">
+			<button
+				onclick="location.href=('../index.html');"
+				title="Exit"
+				id="close"
+			>
 				&times;
 			</button>
-			<button onclick="location.reload()" title="Refresh Game">&#8634;</button>
+			<button onclick="location.reload()" title="Refresh Game" id="refresh">
+				&#8634;
+			</button>
 		</nav>
 
 		<title>Neon Platformer</title>
@@ -23,6 +29,7 @@
 	</head>
 	<style>
 		@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+
 		body {
 			background: #1c2333;
 		}
@@ -69,6 +76,9 @@
 				opacity: 1;
 			}
 		}
+		* {
+			scroll-behavior: smooth;
+		}
 
 		@keyframes animatetop {
 			from {
@@ -84,7 +94,8 @@
 		/* The Close Button */
 		.close {
 			color: white;
-			float: right;
+			margin-right: 30px;
+			left: 30px;
 			font-size: 28px;
 			font-weight: bold;
 		}
