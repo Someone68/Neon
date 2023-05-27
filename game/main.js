@@ -89,7 +89,7 @@ var collectCoin = new Audio("sounds/coinCollected.mp3");
 var die = new Audio("sounds/restart.wav");
 var win = new Audio("sounds/win.wav");
 document.onkeydown = function (event) {
-	if ((event.key = "Enter")) {
+	if (event.key === "Enter") {
 		window.scrollTo(0, 0);
 	}
 	if (event.shiftKey) {
