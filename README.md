@@ -40,3 +40,5 @@
 | `wobbleDist`   | Coin wobble distance           |
 | `wobbleSpeed`  | Coin wobble speed              |
 | `maxStep`      | Maximum acceleration speed     |
+
+###### CREDITS TO KHAN ACADEMY FOR THE FRAMEWORK USED IN THIS GAME
