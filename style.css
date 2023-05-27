@@ -201,3 +201,32 @@ br {
 	margin: auto;
 	text-align: left;
 }
+
+a {
+	color: aquamarine;
+	font-size: 17px;
+	text-decoration: none;
+	font-family: monospace;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	color: aquamarine;
+	background: rgba(24, 24, 24, 0.592);
+	padding: 10px;
+	text-align: center;
+	border-top: 1px solid aquamarine;
+}
+
+footer p {
+	color: lime;
+	font-family: monospace;
+	font-size: 16px;
+}

@@ -1,5 +1,5 @@
 function openBuggedGame() {
-	window.open("mailto:68.someone.m@gmail.com?subject=Bugged%20Game");
+	window.open("https://github.com/Someone68/Neon/issues/new");
 }
 try {
 	var i = 0;
