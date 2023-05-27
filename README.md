@@ -1,3 +1,5 @@
+![IMAGE ERROR](https://n30n.netlify.app/background.png)
+
 # NEON
 
 ### WELCOME TO NEON, AN (UNSURPRISINGLY) NEON PLATFORMER GAME
