@@ -76,8 +76,7 @@ pre {
 	/*width: fit-content;*/
 	height: 172.8;
 	text-align: center;
-	color: #222222;
-	text-shadow: 1.5px 1.5px lime;
+	color: aquamarine;
 }
 
 textarea {
@@ -85,7 +84,7 @@ textarea {
 	height: 100vh;
 }
 
-button {
+/*button {
 	animation-iteration-count: 1;
 	animation-name: XXXXXXXXXX;
 	animation-duration: 1.6s;
@@ -133,6 +132,30 @@ button:hover {
 
 button:hover {
 	border-color: lime;
+}*/
+
+button {
+	outline: none;
+	border: none;
+	cursor: pointer;
+	background: transparent;
+	color: lime;
+	font-family: monospace;
+	margin-left: 14px;
+	font-size: 20px;
+	margin-bottom: 10px;
+	width: 500px;
+	text-align: left;
+}
+
+button:hover {
+	color: aquamarine;
+	margin-left: 0;
+}
+
+button:hover::before {
+	color: aquamarine;
+	content: "> ";
 }
 
 ::-webkit-scrollbar {
@@ -148,18 +171,33 @@ br {
 }
 
 #lc {
-	margin-top: 10px;
-	margin-bottom: 0;
 	border-color: #00ffee;
-	width: 300px;
 }
 
 #lc:hover {
 	color: #00ffcc;
 }
-
+/*
 .ex {
 	font-size: 20px;
 	color: aquamarine;
 	font-family: monospace;
+}
+*/
+
+.buttons {
+	background: rgba(24, 24, 24, 0.592);
+	border: 2px solid lime;
+	padding: 10px;
+	width: fit-content;
+	margin: auto;
+}
+
+#inst {
+	background: rgba(24, 24, 24, 0.592);
+	border: 2px solid aquamarine;
+	padding: 10px;
+	width: fit-content;
+	margin: auto;
+	text-align: left;
 }

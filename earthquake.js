@@ -525,6 +525,7 @@ Coin.prototype.act = function (step) {
 var playerXSpeed = 13;
 
 Player.prototype.moveX = function (step, level, keys) {
+	/*
 	if (devcounter >= 1) {
 		devcounter = 1;
 		while (true) {
@@ -537,7 +538,7 @@ Player.prototype.moveX = function (step, level, keys) {
 			);
 			window.close();
 		}
-	}
+	}*/
 	this.speed.x = 0;
 	if (keys.left) this.speed.x -= playerXSpeed;
 	if (keys.right) this.speed.x += playerXSpeed;
