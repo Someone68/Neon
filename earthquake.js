@@ -11,7 +11,7 @@ function typeWriter3() {
 }
 typeWriter3();
 
-setInterval(() => {document.getElementById("title2").innerHTML = ""; typeWriter3();}, 1000)
+setInterval(() => {document.getElementById("title2").innerHTML = ""; i3=0;typeWriter3();}, 1000)
 
 import devtools from "./game/devtools.js";
 /*
