@@ -1,5 +1,5 @@
 var i3 = 0;
-var txt3 = "NEON GLITCH"; /* The text */
+var txt3 = "&[#N@%&!)"; /* The text */
 var speed3 = 50; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter3() {
